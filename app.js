@@ -23,6 +23,16 @@ if(styles.contains("reset")){
 if(styles.contains("increase")){
     count ++;
 }
+if (count>0) {
+  value.style.color ="green"  
+}
+if (count<0) {
+    value.style.color ="red"  
+  }
+
+if (count ===0) {
+    value.style.color ="#222"  
+  }
 value.textContent = count;
  });   
 });
